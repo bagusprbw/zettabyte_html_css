@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Success :this is a success alert! </span>
+        <span class="close-btn">
+            <span class="fas fa-times">x</span>
+        </span>
+    </div>
+
+    <div class="container">
+        <h2>Simple Pricing!</h2>
+        <h5>The most advance customer support tools with a simple</h5> 
+            <h5>and affordable pricing. And you can always try for 30 days. free! </h5>
+        <div class="price-row">
+            <div class="price-col" >
+                <p>Basic</p>
+                <h3>$4<span>/ Month</span></h3>
+                <ul>
+                    <li>10 projects</li>
+                    <li>10 pages</li>
+                    <li>100 Mb disk space</li>
+                </ul>
+                <button>BUY NOW</button>
+                
+            </div>
+            <div class="price-col">
+
+                    <p class="grid-item">STANDARD</p>
+
+                <h3>$8<span>/ Month</span></h3>
+                <ul>
+                    <li>20 projects</li>
+                    <li>20 pages</li>
+                    <li>200 Mb disk space</li>
+                </ul>
+                <button>BUY NOW</button>
+            </div>
+            <div class="price-col">
+                <p>ADVANCE</p>
+                <h3>$12<span>/ Month</span></h3>
+                <ul>
+                    <li>40 projects</li>
+                    <li>40 pages</li>
+                    <li>500 Mb disk space</li>
+                </ul>
+                <button onclick="">BUY NOW</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid-container">
+                <div class="grid-item item1"><h4>Frequently Asked Questions</h4></div>
+                <div class="grid-item item2">
+                    <h4>How does free trial work?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                        Molestias similique fugiat quidem consequatur, corporis ratione expedita maiores esse.<br /> 
+                        Incidunt eaque repellat repudiandae harum nam obcaecati iste eligendi non maxime pariatur!</p>
+                </div>
+                <div class="grid-item item3">
+                    <h4>Can i cancel any time?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                        Molestias similique fugiat quidem consequatur, corporis ratione expedita maiores esse.<br /> 
+                        Incidunt eaque repellat repudiandae harum nam obcaecati iste eligendi non maxime pariatur!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('button').click(function(){
+            $('.alert').removeClass("hide");
+            $('.alert').addClass("show");
+        });
+        $('close-btn').click(function(){
+            $('.alert').addClass("hide");
+            $('.alert').removeClass("show");
+        });
+    </script>
+</body>
+</html>
